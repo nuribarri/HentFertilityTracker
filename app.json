@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "HENTFertilityTracker",
+    "slug": "HENTFertilityTracker",
+    "platforms": [
+      "ios",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/hentIcon.png",
+    "splash": {
+      "image": "./app/assets/splash2.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#e63c4b"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codewithmosh.donewithit",
+      "buildNumber": "1.0.0"
+    },
+    "description": "HENT Fertility Tracker provides a wearable device to be worn during sleep that allows women to predict the days they are most fertile (the fertile window) by using measured physiological data.",
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "c66c350760b4df249be6a7a97351f609"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
